@@ -1,0 +1,386 @@
+/* Repertuar: Ilkhom ro‘yxat tuzilmasiga mos qora mavzu. */
+body:has(.repertoire-page) {
+  background: #000;
+}
+.repertoire-page {
+  background: #000;
+  color: #fff;
+  padding: 68px 0 85px;
+  min-height: 75vh;
+}
+.repertoire-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+  padding-bottom: 45px;
+}
+.repertoire-kicker {
+  font-size: 10px;
+  color: #999;
+  letter-spacing: 2.5px;
+  margin-bottom: 20px;
+}
+.repertoire-heading h1 {
+  font-family: Manrope, Arial, sans-serif;
+  font-size: clamp(42px, 6vw, 80px);
+  font-weight: 600;
+  letter-spacing: -3px;
+  line-height: 1.1;
+}
+.repertoire-heading h1 > span {
+  color: #e33332;
+}
+.repertoire-intro {
+  font-size: 12px;
+  color: #aaa;
+  line-height: 1.8;
+  text-align: right;
+}
+.repertoire-month {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.repertoire-month h2 {
+  font-family: Manrope, Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.repertoire-month h2 > span {
+  color: #777;
+  font-weight: 400;
+  margin-left: 7px;
+}
+.repertoire-month > span {
+  font-size: 11px;
+  color: #888;
+}
+.repertoire-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.repertoire-entry {
+  border-bottom: 1px solid #303030;
+  scroll-margin-top: 115px;
+}
+.repertoire-row {
+  display: grid;
+  grid-template-columns: 180px 110px minmax(0, 1fr) 180px;
+  gap: 30px;
+  align-items: center;
+  padding: 30px 0;
+  transition: background 0.2s;
+}
+.repertoire-photo {
+  display: block;
+  height: 130px;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(ellipse at bottom, #6b2222, #171717);
+}
+.repertoire-photo img {
+  filter: saturate(0.65);
+  transition:
+    transform 0.5s,
+    filter 0.5s;
+}
+.repertoire-row:hover .repertoire-photo img {
+  transform: scale(1.05);
+  filter: saturate(1);
+}
+.repertoire-age {
+  position: absolute;
+  bottom: 9px;
+  left: 9px;
+  font-size: 9px;
+  border: 1px solid #ffffff60;
+  background: #000a;
+  padding: 3px 6px;
+}
+.repertoire-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-right: 1px solid #292929;
+  padding-right: 25px;
+}
+.repertoire-date strong {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  font-variant-numeric: tabular-nums;
+}
+.repertoire-date > span {
+  font-size: 13px;
+  margin-top: 7px;
+  text-transform: lowercase;
+}
+.repertoire-date small {
+  font-size: 10px;
+  color: #888;
+  margin-top: 6px;
+}
+.repertoire-genre {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  color: #999;
+  margin-bottom: 10px;
+}
+.repertoire-info h2 {
+  font-family: Manrope, Arial, sans-serif;
+  font-size: clamp(22px, 2.5vw, 32px);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.7px;
+}
+.repertoire-info h2 a {
+  transition: color 0.2s;
+}
+.repertoire-info h2 a:hover {
+  color: #f06464;
+}
+.repertoire-time {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 11px;
+  color: #aaa;
+  margin-top: 16px;
+}
+.repertoire-time > span {
+  margin-inline: 4px;
+  color: #555;
+}
+.repertoire-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  text-align: center;
+}
+.repertoire-details {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  color: var(--gold);
+  background: transparent;
+  border: 0;
+  padding: 14px 20px;
+  font-size: 11px;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+.repertoire-details:hover {
+  color: #f4d8a5;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.repertoire-sales {
+  font-size: 9px;
+  color: #888;
+}
+.repertoire-expanded {
+  margin: 0 0 30px 350px;
+  padding: 25px 30px;
+  background: #101010;
+  border-left: 2px solid #d32125;
+}
+.repertoire-expanded h3 {
+  font-family: Manrope, Arial, sans-serif;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.repertoire-expanded p {
+  color: #c8c8c8;
+  font-size: 12px;
+}
+.repertoire-expanded .repertoire-demo-message {
+  color: #999;
+  font-size: 11px;
+  margin-top: 15px;
+}
+.repertoire-notice {
+  display: flex;
+  gap: 20px;
+  padding: 28px;
+  background: #101010;
+  margin-top: 40px;
+  border: 1px solid #252525;
+}
+.repertoire-notice-mark {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border: 1px solid #777;
+  border-radius: 50%;
+  font:
+    italic 16px Georgia,
+    serif;
+  color: #bbb;
+}
+.repertoire-notice h2 {
+  font-family: Manrope, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.repertoire-notice p {
+  font-size: 11px;
+  color: #999;
+  max-width: 830px;
+}
+body:has(.repertoire-page) .footer {
+  margin-top: 0;
+  border-top: 1px solid #252525;
+  background: #080808;
+}
+@media (max-width: 1050px) {
+  .repertoire-row {
+    grid-template-columns: 140px 85px minmax(0, 1fr) 150px;
+    gap: 22px;
+  }
+  .repertoire-photo {
+    height: 115px;
+  }
+  .repertoire-date {
+    padding-right: 20px;
+  }
+  .repertoire-expanded {
+    margin-left: 269px;
+  }
+}
+@media (max-width: 780px) {
+  .repertoire-row {
+    grid-template-columns: 120px 75px minmax(0, 1fr);
+    gap: 20px;
+  }
+  .repertoire-actions {
+    grid-column: 3;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: -8px;
+    text-align: left;
+  }
+  .repertoire-photo {
+    grid-row: 1/3;
+    height: 145px;
+  }
+  .repertoire-date {
+    grid-row: 1/3;
+    padding-right: 15px;
+  }
+  .repertoire-info h2 {
+    font-size: 24px;
+  }
+  .repertoire-details {
+    padding: 10px 18px;
+  }
+  .repertoire-expanded {
+    margin-left: 0;
+  }
+  .repertoire-heading h1 {
+    letter-spacing: -2px;
+  }
+}
+@media (max-width: 500px) {
+  .repertoire-page {
+    padding: 40px 0 50px;
+  }
+  .repertoire-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+    padding-bottom: 30px;
+  }
+  .repertoire-intro {
+    text-align: left;
+    font-size: 11px;
+  }
+  .repertoire-intro br {
+    display: none;
+  }
+  .repertoire-kicker {
+    font-size: 8px;
+    margin-bottom: 14px;
+  }
+  .repertoire-month {
+    padding: 17px 0;
+  }
+  .repertoire-month h2 {
+    font-size: 16px;
+  }
+  .repertoire-row {
+    grid-template-columns: 78px minmax(0, 1fr);
+    gap: 16px;
+    padding: 23px 0;
+  }
+  .repertoire-photo {
+    grid-column: 2;
+    grid-row: 1;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+  .repertoire-date {
+    grid-column: 1;
+    grid-row: 1;
+    padding-right: 15px;
+    align-self: stretch;
+    justify-content: center;
+  }
+  .repertoire-date strong {
+    font-size: 43px;
+  }
+  .repertoire-date small {
+    font-size: 8px;
+  }
+  .repertoire-date > span {
+    font-size: 12px;
+  }
+  .repertoire-info {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .repertoire-info h2 {
+    font-size: 24px;
+  }
+  .repertoire-genre {
+    font-size: 8px;
+    margin-bottom: 8px;
+  }
+  .repertoire-time {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .repertoire-actions {
+    grid-column: 2;
+    grid-row: 3;
+    margin-top: 0;
+    align-items: stretch;
+  }
+  .repertoire-details {
+    justify-content: space-between;
+    padding: 12px 16px;
+  }
+  .repertoire-expanded {
+    padding: 20px;
+    margin-bottom: 23px;
+  }
+  .repertoire-notice {
+    padding: 20px;
+    gap: 13px;
+    margin-top: 28px;
+  }
+}

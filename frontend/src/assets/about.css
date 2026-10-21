@@ -1,0 +1,288 @@
+.about-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+.about-navigation a {
+  display: inline-flex;
+  align-items: center;
+  gap: 22px;
+  padding: 12px 18px;
+  border: 1px solid var(--line);
+  font-size: 11px;
+  color: var(--gold);
+  transition: background 0.2s;
+}
+.about-navigation a:hover {
+  background: #241a21;
+}
+.about-block {
+  margin-top: 85px;
+  padding-top: 45px;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 110px;
+}
+.about-section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+}
+.about-section-heading h2 {
+  margin-top: 14px;
+}
+.about-demo-badge {
+  color: #bbaeb5;
+  font-size: 9px;
+  padding: 7px 11px;
+  border: 1px solid #ffffff20;
+  white-space: nowrap;
+}
+.about-section-intro {
+  max-width: 680px;
+  font-size: 12px;
+  color: var(--muted);
+  margin: 22px 0 30px;
+}
+.actors-grid,
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+.actor-card {
+  background: #21181f;
+  border: 1px solid var(--line);
+}
+.actor-portrait {
+  position: relative;
+  height: 260px;
+  display: grid;
+  place-items: center;
+  color: #b99151;
+  background: radial-gradient(ellipse at center bottom, #50343c, #241a21 75%);
+  overflow: hidden;
+}
+.actor-portrait::after {
+  content: '';
+  position: absolute;
+  inset: 22px;
+  border: 1px solid #e8bf7714;
+  pointer-events: none;
+}
+.actor-number {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  font:
+    italic 30px 'Cormorant Garamond',
+    Georgia,
+    serif;
+  color: #e8bf7760;
+}
+.actor-photo-label {
+  position: absolute;
+  bottom: 36px;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #c7b3b8;
+}
+.actor-content {
+  padding: 25px;
+}
+.actor-content .eyebrow {
+  font-size: 8px;
+  letter-spacing: 1.4px;
+}
+.actor-content h3 {
+  font-size: 32px;
+  margin: 12px 0;
+}
+.actor-content > p:last-child,
+.achievement-card > p:last-child {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.9;
+}
+.achievement-card {
+  border: 1px solid var(--line);
+  padding: 30px;
+  background: linear-gradient(135deg, #2c2027, #1b141a);
+}
+.achievement-card > svg {
+  color: var(--gold);
+  margin-bottom: 28px;
+}
+.achievement-card .eyebrow {
+  font-size: 8px;
+}
+.achievement-card h3 {
+  font-size: 29px;
+  margin: 14px 0 16px;
+}
+.about-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.gallery-tile {
+  position: relative;
+  padding: 0;
+  border: 1px solid var(--line);
+  height: 310px;
+  overflow: hidden;
+  text-align: left;
+  background: #241a21;
+  color: #fff;
+}
+.gallery-tile img {
+  transition: transform 0.5s;
+  filter: brightness(0.7);
+}
+.gallery-tile:hover img {
+  transform: scale(1.04);
+}
+.gallery-tile::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, #100b11dd, transparent 70%);
+  pointer-events: none;
+}
+.gallery-expand {
+  position: absolute;
+  z-index: 1;
+  top: 18px;
+  right: 18px;
+  border: 1px solid #ffffff40;
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  background: #17111680;
+}
+.gallery-caption {
+  position: absolute;
+  bottom: 24px;
+  left: 26px;
+  right: 20px;
+  z-index: 1;
+  display: grid;
+  gap: 8px;
+}
+.gallery-caption small {
+  color: var(--gold);
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+.gallery-caption > span {
+  font:
+    28px 'Cormorant Garamond',
+    Georgia,
+    serif;
+}
+.gallery-viewer {
+  border: 1px solid var(--line);
+  padding: 0;
+  background: #171116;
+  color: #fff;
+  width: min(1000px, calc(100% - 32px));
+  max-height: 92dvh;
+}
+.gallery-viewer::backdrop {
+  background: #000e;
+}
+.gallery-viewer-inner {
+  position: relative;
+}
+.gallery-viewer-inner > img {
+  height: min(65dvh, 650px);
+  object-fit: contain;
+  background: #0e0b0e;
+}
+.gallery-close,
+.gallery-control {
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  background: #171116dd;
+  color: var(--gold);
+  border: 1px solid var(--line);
+}
+.gallery-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1;
+}
+.gallery-viewer-bottom {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.gallery-viewer-bottom p {
+  font-size: 13px;
+}
+.gallery-viewer-bottom small {
+  font-size: 10px;
+  color: var(--muted);
+}
+@media (max-width: 850px) {
+  .actors-grid,
+  .achievements-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .gallery-tile {
+    height: 260px;
+  }
+  .about-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+@media (max-width: 580px) {
+  .about-block {
+    margin-top: 50px;
+    padding-top: 32px;
+    scroll-margin-top: 95px;
+  }
+  .about-section-heading h2 {
+    font-size: 36px;
+  }
+  .actors-grid,
+  .achievements-grid,
+  .about-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .actor-portrait {
+    height: 280px;
+  }
+  .gallery-tile {
+    height: 280px;
+  }
+  .about-navigation {
+    gap: 8px;
+  }
+  .about-navigation a {
+    padding: 10px 12px;
+    gap: 10px;
+    font-size: 10px;
+  }
+  .gallery-viewer-bottom {
+    padding: 14px;
+  }
+  .gallery-viewer-bottom p {
+    font-size: 11px;
+  }
+}
+
+.about-detail-page .about-section-heading h1 {
+  font-size: clamp(40px, 6vw, 68px);
+  margin: 14px 0 0;
+}

@@ -1,0 +1,139 @@
+/* Harakatlar bir xil tezlik va yumshoq o‘tish bilan ishlaydi. */
+@media (prefers-reduced-motion: no-preference) {
+  .motion-target {
+    opacity: 0;
+    transform: translateY(22px);
+    transition:
+      opacity 650ms ease,
+      transform 650ms cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+  .motion-target.is-revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .route-enter-active {
+    animation: page-arrive 350ms ease both;
+  }
+  .route-leave-active {
+    display: none;
+  }
+  .navbar {
+    animation: navigation-arrive 550ms ease both;
+  }
+  .mobile-nav,
+  .about-submenu {
+    animation: menu-arrive 220ms ease both;
+    transform-origin: top center;
+  }
+  .button,
+  .repertoire-details,
+  .gallery-control,
+  .gallery-close,
+  .hero-animation-toggle,
+  .menu-toggle {
+    transition:
+      transform 200ms ease,
+      background 200ms ease,
+      color 200ms ease,
+      box-shadow 200ms ease;
+  }
+  .button:hover {
+    box-shadow: 0 8px 25px #b991512b;
+  }
+  .button:active,
+  .repertoire-details:active,
+  .gallery-control:active,
+  .gallery-close:active,
+  .hero-animation-toggle:active {
+    transform: scale(0.96);
+  }
+  .text-link svg,
+  .detail-link svg,
+  .button svg,
+  .repertoire-details svg,
+  .footer-contact svg {
+    transition: transform 220ms ease;
+  }
+  .text-link:hover svg,
+  .detail-link:hover svg,
+  .button:hover svg,
+  .repertoire-details:hover svg,
+  .footer-contact:hover svg {
+    transform: translate(3px, -2px);
+  }
+  .actor-card,
+  .achievement-card,
+  .contact-grid article {
+    transition:
+      opacity 650ms ease,
+      transform 350ms ease,
+      border-color 250ms ease,
+      box-shadow 250ms ease;
+  }
+  .actor-card.is-revealed:hover,
+  .achievement-card.is-revealed:hover,
+  .contact-grid article.is-revealed:hover,
+  .performance-card.is-revealed:hover {
+    transform: translateY(-6px);
+    border-color: #e8bf7766;
+    box-shadow: 0 12px 32px #0003;
+  }
+  .gallery-viewer[open] .gallery-viewer-inner {
+    animation: menu-arrive 260ms ease both;
+  }
+  .footer-navigation a {
+    transition:
+      color 200ms ease,
+      transform 200ms ease;
+  }
+  .footer-navigation a:hover {
+    transform: translateX(4px);
+  }
+}
+@keyframes page-arrive {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes navigation-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes menu-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .motion-target {
+    opacity: 1;
+    transform: none;
+  }
+  .route-enter-active,
+  .navbar,
+  .mobile-nav,
+  .about-submenu {
+    animation: none;
+  }
+}
+@media print {
+  .motion-target {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

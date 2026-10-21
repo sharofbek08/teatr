@@ -1,0 +1,129 @@
+{
+  "performances": [
+    {
+      "id": "hamlet",
+      "name": "Hamlet",
+      "genre": "Tragediya",
+      "dateISO": "2026-10-24",
+      "date": "24 oktabr",
+      "time": "19:00",
+      "age": "16+",
+      "image": "photo-1503095396549-807759245b35",
+      "description": "Uilyam Shekspirning inson qalbi, tanlov va adolat haqidagi o‘lmas asari."
+    },
+    {
+      "id": "teatr-oqshomi",
+      "name": "Teatr oqshomi",
+      "genre": "Drama",
+      "dateISO": "2026-10-27",
+      "date": "27 oktabr",
+      "time": "18:30",
+      "age": "12+",
+      "image": "photo-1507676184212-d03ab07a01bf",
+      "description": "Hayot, muhabbat va orzular haqida samimiy sahna hikoyasi."
+    },
+    {
+      "id": "sanat-kechasi",
+      "name": "San’at kechasi",
+      "genre": "Musiqali tomosha",
+      "dateISO": "2026-10-30",
+      "date": "30 oktabr",
+      "time": "19:00",
+      "age": "6+",
+      "image": "photo-1516280440614-37939bbacd81",
+      "description": "Musiqa va sahna san’ati uyg‘unlashgan yorqin oqshom."
+    }
+  ],
+  "actors": [
+    {
+      "id": 1,
+      "name": "Aktyor ismi",
+      "role": "Drama aktyori",
+      "initials": "01",
+      "description": "Aktyorning ijodiy yo‘li va sahnadagi rollari haqida ma’lumot shu yerda beriladi."
+    },
+    {
+      "id": 2,
+      "name": "Aktrisa ismi",
+      "role": "Teatr aktrisasi",
+      "initials": "02",
+      "description": "Aktrisaning ijodiy faoliyati va tanlangan spektakllari haqida ma’lumot qo‘shiladi."
+    },
+    {
+      "id": 3,
+      "name": "Aktyor ismi",
+      "role": "Musiqali teatr aktyori",
+      "initials": "03",
+      "description": "Ijrochining sahna tajribasi va musiqali tomoshalardagi rollari haqida ma’lumot beriladi."
+    }
+  ],
+  "achievements": [
+    {
+      "id": 1,
+      "category": "Festivallar",
+      "title": "Festival va ijodiy uchrashuvlar",
+      "description": "Teatr qatnashgan festivallar, ularning sanalari va natijalari rasmiy ma’lumotlar asosida qo‘shiladi."
+    },
+    {
+      "id": 2,
+      "category": "E’tirof",
+      "title": "Mukofotlar va e’tiroflar",
+      "description": "Jamoa va aktyorlarning tasdiqlangan mukofotlari ushbu bo‘limda namoyish etiladi."
+    },
+    {
+      "id": 3,
+      "category": "Ijod",
+      "title": "Sahnadagi muhim qadamlar",
+      "description": "Premyeralar, ijodiy hamkorliklar va teatr hayotidagi muhim voqealar haqida hikoya qilamiz."
+    }
+  ],
+  "gallery": [
+    {
+      "id": 1,
+      "image": "photo-1514306191717-452ec28c7814",
+      "title": "Tomoshabinlarni kutayotgan zal",
+      "category": "Teatr muhiti"
+    },
+    {
+      "id": 2,
+      "image": "photo-1507676184212-d03ab07a01bf",
+      "title": "Sahna chiroqlari ostida",
+      "category": "Sahna"
+    },
+    {
+      "id": 3,
+      "image": "photo-1503095396549-807759245b35",
+      "title": "Hikoya jonlanadigan lahza",
+      "category": "Ijro"
+    },
+    {
+      "id": 4,
+      "image": "photo-1516280440614-37939bbacd81",
+      "title": "Musiqa va tuyg‘ular",
+      "category": "Musiqa"
+    }
+  ],
+  "socialLinks": [],
+  "heroMedia": {
+    "animatedSrc": "",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=2400&q=90"
+  },
+  "about": {
+    "eyebrow": "BIZNING HIKOYAMIZ",
+    "title": "San’at bilan",
+    "accent": "yashaymiz.",
+    "subtitle": "Har bir sahna —\nyangi bir olam.",
+    "body": "Teatrimiz tomoshabinlarga yuksak sahna madaniyatini taqdim etishga intiladi. Har bir spektakl — yangi hikoya va yangi taassurot.\n\nTHEATRO san’atni sevuvchi insonlarni birlashtiradigan maskan sifatida yaratilmoqda. Ijodiy jamoa, sahna hikoyalari va teatr hayotidagi yorqin lahzalar bilan shu yerda tanishing.",
+    "image": "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=1000&q=85",
+    "imageAlt": "Teatr zali",
+    "note": "Ushbu sahifadagi matn va tasvirlar namuna sifatida berilgan."
+  },
+  "contact": {
+    "address": "Toshkent, O‘zbekiston",
+    "phone": "",
+    "email": "",
+    "hours": "Tez orada e’lon qilinadi.",
+    "mapUrl": "",
+    "note": ""
+  }
+}

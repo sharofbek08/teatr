@@ -1,0 +1,24 @@
+{
+  "name": "theatro",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env server/index.mjs --dev",
+    "dev:frontend": "vite --host 127.0.0.1 --configLoader runner",
+    "start": "node --env-file-if-exists=.env server/index.mjs",
+    "test": "node --test server/content.test.mjs",
+    "build": "vite build --configLoader runner",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.3",
+    "pinia": "^3.0.3",
+    "lucide-vue-next": "^0.468.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.7",
+    "@vitejs/plugin-vue": "^6.0.1"
+  }
+}
